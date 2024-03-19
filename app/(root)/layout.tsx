@@ -1,3 +1,4 @@
+import Sidebar from '@/components/shared/Sidebar';
 import React from 'react';
 
 type LayoutProps = {
@@ -8,6 +9,9 @@ const Layout:React.FC<LayoutProps> = ({children}) => {
     
     return (
         <main className='root'>
+            {/* Sidebar */}
+            <Sidebar/>
+            {/* MobileNav */}
             <div className='root-container'>
                 <div className="wrapper">
                     {children}
